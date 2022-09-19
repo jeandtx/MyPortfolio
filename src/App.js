@@ -1,44 +1,51 @@
-import logo from './logo.svg';
 import Portfolio from './Portfolio';
 import './styles/App.css';
-import Button from './components/Button';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
 function App() {
 	const progressRef = useRef(null);
+	const textRef = useRef(null);
 
 	useEffect(() => {
 		const progress = progressRef.current;
-		gsap.to(progress, {
+		gsap.fromTo(progress, { opacity: 0 }, {
 			scrollTrigger: {
 				trigger: ".App",
 				start: "top top",
 				end: "bottom bottom",
 				scrub: 0.6,
-
 			},
+			opacity: 1,
 			value: 100,
+		});
+		const text = textRef.current;
+		gsap.fromTo(text, {
+			opacity: 0,
+			y: 150,
+		}, {
+			opacity: 1,
+			y: 0,
+			duration: 2,
+			ease: "power4.out",
 		});
 	}, []);
 
 	return (
 		<div className="App">
-			<progress value="0" max="100" ref={progressRef}></progress>
+			<progress value="0" max="100" ref={progressRef} />
 			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
-				<Button href="https://www.joshuamichaelharris.com" text="Or check out my portfolio!" />
+				<div />
+				<div />
+				<div />
+				<div className='pageTitle'>
+					<h1 ref={textRef}>Jean Doutriaux</h1>
+				</div>
+				<div />
+				<div />
+				<div />
+				<div />
+				<div />
 			</header>
 			<Portfolio />
 		</div>
