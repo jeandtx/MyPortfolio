@@ -13,6 +13,6 @@ code {
 }
 
 :root {
-  scrollbar-color: rgba(255, 0, 0, 0) black;
+  scrollbar-color: rgba(0, 0, 0, 0) black;
   /* Hide scroll bar */
 }
