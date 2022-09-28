@@ -1,7 +1,6 @@
 * {
 	margin: 0;
 	max-width: 100%;
-
 }
 
 .App {
@@ -14,10 +13,13 @@
 }
 
 .App-header {
+	width: 100%;
+	height: 100%;
 	background-color: #282c34;
-	min-height: 100vh;
-	display: grid;
-	grid-template-columns: 5em auto auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 	font-size: calc(10px + 2vmin);
 	color: white;
 }
@@ -37,29 +39,35 @@ progress {
 	height: 5px;
 }
 
+p {
+	font-size: 1.3rem;
+}
+
+img {
+	max-width: 100%;
+	width: auto;
+	height: 30vh;
+	border-radius: 5%;
+}
+
 .navbar {
-	background-color: #ff0101;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	width: 100%;
-	height: 100%;
+	width: 20vh;
+	height: 100vh;
 
 }
 
 .pageTitle {
-	padding-left: 30%;
-	display: flex;
-	justify-content: left;
-	flex-direction: column;
-	align-items: center;
-	margin-left: 10%;
+	width: 60%;
+	height: 50vh;
 }
 
 .portrait {
-	width: 200%;
+	width: 33vh;
 	height: auto;
 	border-radius: 5%;
 	opacity: 80%;
-	margin-left: 55%;
+	margin-left: 10vh;
 }
