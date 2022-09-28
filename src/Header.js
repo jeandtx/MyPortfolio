@@ -61,14 +61,14 @@ function Header() {
     }, []);
 
     return (
-        <div className="App">
+        <div>
             <progress value="0" max="100" ref={progressRef} />
             <header className="App-header">
                 <div className='portrait' >
                     <img src={BG} ref={imgRef} alt="logo" />
                 </div>
-                <div className='pageTitle'>
-                    <h3 ref={textRef} >Jean Doutriaux</h3>
+                <div className='pageTitle' ref={textRef}>
+                    <h3 >Jean Doutriaux</h3>
                     <h4>Full Stack Web Developer</h4>
                     <p>
                         Welcome to my portfolio. I am a full stack web developer with a passion for creating

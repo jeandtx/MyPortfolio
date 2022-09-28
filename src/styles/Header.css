@@ -53,6 +53,24 @@ img {
 .pageTitle {
     width: 60%;
     height: 50vh;
+    padding-left: 10%;
+}
+
+.pageTitle h3 {
+    text-align: left;
+    font-size: calc(10px + 5vmin);
+}
+
+.pageTitle h4 {
+    text-align: left;
+    font-size: calc(10px + 2vmin);
+    margin-top: 15%;
+}
+
+.pageTitle p {
+    text-align: left;
+    font-size: calc(10px + 1vmin);
+    margin-top: 5%;
 }
 
 .portrait {
