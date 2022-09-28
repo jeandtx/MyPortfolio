@@ -1,4 +1,4 @@
-import './styles/App.css';
+import './styles/Header.css';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import BG from './assets/BG.JPG';
