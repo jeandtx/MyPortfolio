@@ -63,7 +63,7 @@ function Header() {
     return (
         <div>
             <progress value="0" max="100" ref={progressRef} />
-            <header className="App-header">
+            <header>
                 <div className='portrait' >
                     <img src={BG} ref={imgRef} alt="logo" />
                 </div>
@@ -77,15 +77,15 @@ function Header() {
                         comments.
                     </p>
                 </div>
-                <div className='Menu'>
-                    <div className='navbar'>
-                        <div><a href='#navbar'>Home</a></div>
-                        <div><a href='#navbar'>About</a></div>
-                        <div><a href='#navbar'>Projects</a></div>
-                        <div><a href='#navbar'>Contact</a></div>
-                    </div>
-                </div>
             </header>
+            <div className='Menu'>
+                <div className='navbar'>
+                    <div><a href='#navbar'>Home</a></div>
+                    <div><a href='#navbar'>About</a></div>
+                    <div><a href='#navbar'>Projects</a></div>
+                    <div><a href='#navbar'>Contact</a></div>
+                </div>
+            </div>
         </div>
     );
 }

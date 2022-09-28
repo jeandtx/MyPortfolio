@@ -7,6 +7,9 @@ function App() {
 		<div className="App">
 			<Header />
 			<Portfolio />
+			<Portfolio />
+			<Portfolio />
+			<Portfolio />
 		</div>
 	);
 }
