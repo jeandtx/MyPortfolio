@@ -2,7 +2,7 @@ import '../styles/Me.css';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
-function Portfolio() {
+function Me() {
 
     const progressRef1 = useRef(null);
     const progressRef2 = useRef(null);
@@ -172,4 +172,4 @@ function Portfolio() {
     );
 }
 
-export default Portfolio;
+export default Me;
