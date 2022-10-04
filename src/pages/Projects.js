@@ -1,11 +1,11 @@
-import logo from './logo.svg';
+import logo from '../logo.svg';
 import gsap from 'gsap';
 import { useRef, useEffect } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-function Portfolio() {
+function Projects() {
     const imgRef = useRef(null);
     useEffect(() => {
         const img = imgRef.current;
@@ -45,4 +45,4 @@ function Portfolio() {
     );
 }
 
-export default Portfolio;
+export default Projects;

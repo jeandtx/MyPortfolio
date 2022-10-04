@@ -1,7 +1,7 @@
-import Portfolio from './Portfolio';
+import Portfolio from './Projects';
 import Header from './Header';
 import Me from './Me';
-import './styles/App.css';
+import '../styles/App.css';
 
 function App() {
 	return (

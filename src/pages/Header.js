@@ -1,7 +1,7 @@
-import './styles/Header.css';
+import '../styles/Header.css';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import BG from './assets/BG.JPG';
+import BG from '../assets/BG.JPG';
 
 function Header() {
     const progressRef = useRef(null);
