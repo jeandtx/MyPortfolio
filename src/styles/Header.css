@@ -19,11 +19,12 @@ header {
     color: #61dafb;
 }
 
-progress {
+.header progress {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    background-color: #7e8491;
     z-index: 1000;
     appearance: none;
     border: none;
@@ -84,6 +85,7 @@ a {
     right: 0px;
     width: 10%;
     height: 100vh;
+    z-index: -100;
 }
 
 .navbar {

@@ -1,14 +1,14 @@
 import Portfolio from './Portfolio';
 import Header from './Header';
+import Me from './Me';
 import './styles/App.css';
 
 function App() {
 	return (
 		<div className="App">
 			<Header />
-			<Portfolio />
-			<Portfolio />
-			<Portfolio />
+			<Me />
+
 			<Portfolio />
 		</div>
 	);

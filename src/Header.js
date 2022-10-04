@@ -61,7 +61,7 @@ function Header() {
     }, []);
 
     return (
-        <div>
+        <div className='header'>
             <progress value="0" max="100" ref={progressRef} />
             <header>
                 <div className='portrait' >
