@@ -1,0 +1,43 @@
+.contact {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 100vh;
+	width: 90%;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: #282c34;
+	color: white;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+input,
+textarea {
+	margin: 10px;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #565a63;
+	font-size: 1.2rem;
+	color: white;
+}
+
+.old-messages {
+	width: inherit;
+}
+
+.old-messages * {
+	margin: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #565a63;
+	font-size: 1.2rem;
+	color: white;
+	padding: calc(2% - 10px);
+}
