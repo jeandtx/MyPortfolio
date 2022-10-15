@@ -1,100 +1,74 @@
 .App-logo {
-    height: 40vmin;
-    pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 header {
-    width: 90%;
-    height: 100vh;
-    background-color: #282c34;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+	width: 90%;
+	height: 100vh;
+	background-color: #282c34;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-    color: #61dafb;
+	color: #61dafb;
 }
 
 .header progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #7e8491;
-    z-index: 1000;
-    appearance: none;
-    border: none;
-    height: 5px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #7e8491;
+	z-index: 1000;
+	appearance: none;
+	border: none;
+	height: 5px;
 }
 
 p {
-    font-size: 1.3rem;
+	font-size: 1.3rem;
 }
 
 img {
-    max-width: 100%;
-    width: auto;
-    height: 30vh;
-    border-radius: 5%;
+	max-width: 100%;
+	width: auto;
+	height: 30vh;
+	border-radius: 5%;
 }
 
 .portrait {
-    width: 33vh;
-    height: auto;
-    border-radius: 5%;
-    opacity: 80%;
-    margin-left: 10vh;
+	width: 33vh;
+	height: auto;
+	border-radius: 5%;
+	opacity: 80%;
+	margin-left: 10vh;
 }
 
 .pageTitle {
-    width: 60%;
-    height: 50vh;
-    padding-left: 10%;
+	width: 60%;
+	height: 50vh;
+	padding-left: 10%;
 }
 
 .pageTitle h3 {
-    text-align: left;
-    font-size: calc(10px + 5vmin);
+	text-align: left;
+	font-size: calc(10px + 5vmin);
 }
 
 .pageTitle h4 {
-    text-align: left;
-    font-size: calc(10px + 2vmin);
-    margin-top: 15%;
+	text-align: left;
+	font-size: calc(10px + 2vmin);
+	margin-top: 15%;
 }
 
 .pageTitle p {
-    text-align: left;
-    font-size: calc(10px + 1vmin);
-    margin-top: 5%;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    font-size: calc(10px + 1vmin);
-}
-
-.Menu {
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    width: 10%;
-    height: 100vh;
-    z-index: -100;
-}
-
-.navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    /* width: 15vh; */
-    height: 100vh;
-    background-color: #282c34;
-    color: white;
-    font-size: calc(10px + 2vmin);
+	text-align: left;
+	font-size: calc(10px + 1vmin);
+	margin-top: 5%;
 }

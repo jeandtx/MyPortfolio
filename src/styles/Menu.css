@@ -1,0 +1,25 @@
+a {
+	text-decoration: none;
+	color: white;
+	font-size: calc(10px + 1vmin);
+}
+
+.Menu {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 10%;
+	height: 100vh;
+	z-index: -100;
+}
+
+.navbar {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	/* width: 15vh; */
+	height: 100vh;
+	background-color: #282c34;
+	color: white;
+	font-size: calc(10px + 2vmin);
+}
