@@ -20,11 +20,10 @@ function Projects() {
                 trigger: '.skills',
                 start: 'top top',
                 end: 'bottom bottom',
-                scrub: 3,
             },
             opacity: 1,
             y: 0,
-            duration: 2,
+            duration: 3,
             ease: "elastic.out(1, 0.3)",
             position: 'relative',
             scale: 1.5
