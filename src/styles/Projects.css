@@ -10,7 +10,7 @@
 	color: white;
 }
 
-.flexrow {
+.flexcol {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -18,8 +18,22 @@
 	align-items: center;
 }
 
-.flexrow * {
+.flexcol * {
 	margin: 10px;
+}
+
+.flexcol div {
+	position: absolute;
+	width: 30%;
+	font-size: calc(10px + 2vmin);
+}
+
+.flexcol img {
+	z-index: 1;
+}
+
+img:hover {
+	opacity: 0.1;
 }
 
 .projects h1 {

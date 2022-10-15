@@ -1,4 +1,6 @@
-import BG from '../assets/BG.JPG';
+import Matchikal from '../assets/matchikal.png';
+import lifesgame from '../assets/ligesgame.gif';
+import python from '../assets/python.png';
 import '../styles/Projects.css';
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
@@ -15,7 +17,7 @@ function Projects() {
             scale: 1
         }, {
             scrollTrigger: {
-                trigger: '.projects',
+                trigger: '.skills',
                 start: 'top top',
                 end: 'bottom bottom',
                 scrub: 3,
@@ -32,25 +34,29 @@ function Projects() {
     return (
         <div className='projects'>
             <h1 ref={h1Ref}>My Projects</h1>
-            <div>
-                <h2>Project 1</h2>
-                <div className='flexrow'>
-                    <img src={BG} alt="logo" />
-                    <p>Project 2 description</p>
+            <div className='projects-container' >
+                <h2>Python Game</h2>
+                <div className='flexcol'>
+                    <img src={python} alt="logo" />
+                    <div>During my first year in computer science our first project was to create a game using only python and libraries.
+                        So we created a reproduction of the famous game Super Smash BRO</div>
                 </div>
             </div>
             <div>
-                <h2>Project 2</h2>
-                <div className='flexrow'>
-                    <img src={BG} alt="logo" />
-                    <p>Project 2 description</p>
+                <h2>Matchikal</h2>
+                <div className='flexcol'>
+                    <img src={Matchikal} alt="logo" />
+                    <div
+                    >Matchikal is a new way to discover strangers! Discover by musical taste. This application is able to get your profile using apis of your music streaming app and check the compatibility with anyone.</div>
                 </div>
             </div>
             <div>
-                <h2>Project 3</h2>
-                <div className='flexrow'>
-                    <img src={BG} alt="logo" />
-                    <p>Project 3 description</p>
+                <h2>The Game Of Life</h2>
+                <div className='flexcol'>
+                    <img src={lifesgame} alt="logo" />
+                    <div
+                        style={{ width: '15%' }}
+                    >Reproducting the famous game of life</div>
                 </div>
             </div>
         </div>
