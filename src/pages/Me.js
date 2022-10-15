@@ -33,6 +33,7 @@ function Me() {
                 scrub: 0.6,
             },
             value: 75,
+            scale: 1.5
         });
         gsap.fromTo(progress2, {
             value: 100,
@@ -44,6 +45,7 @@ function Me() {
                 scrub: 0.6,
             },
             value: 40,
+            scale: 1.5
         });
         gsap.fromTo(progress3, {
             value: 100,
@@ -55,6 +57,7 @@ function Me() {
                 scrub: 0.6,
             },
             value: 95,
+            scale: 1.5
         });
         gsap.fromTo(progress4, {
             value: 100,
@@ -66,6 +69,7 @@ function Me() {
                 scrub: 0.6,
             },
             value: 85,
+            scale: 1.5
         });
         gsap.fromTo(progress5, {
             value: 100,
@@ -77,6 +81,7 @@ function Me() {
                 scrub: 0.6,
             },
             value: 95,
+            scale: 1.5
         });
         gsap.fromTo(progress6, {
             value: 100,
@@ -88,6 +93,7 @@ function Me() {
                 scrub: 0.6,
             },
             value: 80,
+            scale: 1.5
         });
         gsap.fromTo(progress7, {
             value: 100,
@@ -99,6 +105,7 @@ function Me() {
                 scrub: 0.6,
             },
             value: 67,
+            scale: 1.5
         });
         gsap.fromTo(progress8, {
             value: 100,
@@ -110,6 +117,7 @@ function Me() {
                 scrub: 0.6,
             },
             value: 90,
+            scale: 1.5
         });
 
     }, []);

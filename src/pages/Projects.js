@@ -12,6 +12,7 @@ function Projects() {
         gsap.fromTo(h1, {
             opacity: 0,
             y: 150,
+            scale: 1
         }, {
             scrollTrigger: {
                 trigger: '.projects',
@@ -23,6 +24,8 @@ function Projects() {
             y: 0,
             duration: 2,
             ease: "elastic.out(1, 0.3)",
+            position: 'relative',
+            scale: 1.5
         });
     }, []);
 
