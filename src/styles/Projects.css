@@ -1,0 +1,34 @@
+.projects {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 90%;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: #282c34;
+	color: white;
+}
+
+.flexrow {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.flexrow * {
+	margin: 10px;
+}
+
+.projects h1 {
+	position: fixed;
+	top: 7%;
+	left: 40%;
+}
+
+.projects h2 {
+	align-items: left;
+	padding: 5%;
+}
