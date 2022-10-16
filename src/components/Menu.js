@@ -5,10 +5,10 @@ function Menu() {
     return (
         <div className='Menu'>
             <div className='navbar'>
-                <div><a href='#navbar'>Home</a></div>
-                <div><a href='#navbar'>About</a></div>
-                <div><a href='#navbar'>Projects</a></div>
-                <div><a href='#navbar'>Contact</a></div>
+                <div><a href='#header'>Home</a></div>
+                <div><a href='#aboutme'>About</a></div>
+                <div><a href='#projects'>Projects</a></div>
+                <div><a href='#contact'>Contact</a></div>
             </div>
         </div>
     );
