@@ -35,28 +35,34 @@ function Projects() {
             <h1 ref={h1Ref}>My Projects</h1>
             <div className='projects-container' >
                 <h2>Python Game</h2>
-                <div className='flexcol'>
-                    <img src={python} alt="logo" />
-                    <div>During my first year in computer science our first project was to create a game using only python and libraries.
-                        So we created a reproduction of the famous game Super Smash BRO</div>
-                </div>
+                <a href='https://github.com/MatthiasBeausseron/Projet-transverse' target='_blank' rel='noopener noreferrer'>
+                    <div className='flexcol'>
+                        <img src={python} alt="logo" />
+                        <div>During my first year in computer science our first project was to create a game using only python and libraries.
+                            So we created a reproduction of the famous game Super Smash BRO</div>
+                    </div>
+                </a>
             </div>
             <div>
                 <h2>Matchikal</h2>
-                <div className='flexcol'>
-                    <img src={Matchikal} alt="logo" />
-                    <div
-                    >Matchikal is a new way to discover strangers! Discover by musical taste. This application is able to get your profile using apis of your music streaming app and check the compatibility with anyone.</div>
-                </div>
+                <a href='https://github.com/jeandtx/matchikal' target='_blank' rel='noopener noreferrer'>
+                    <div className='flexcol'>
+                        <img src={Matchikal} alt="logo" />
+                        <div
+                        >Matchikal is a new way to discover strangers! Discover by musical taste. This application is able to get your profile using apis of your music streaming app and check the compatibility with anyone.</div>
+                    </div>
+                </a>
             </div>
             <div>
                 <h2>The Game Of Life</h2>
-                <div className='flexcol'>
-                    <img src={lifesgame} alt="logo" />
-                    <div
-                        style={{ width: '15%' }}
-                    >Reproducting the famous game of life</div>
-                </div>
+                <a href='https://github.com/jeandtx/life-s-game' target='_blank' rel='noopener noreferrer'>
+                    <div className='flexcol'>
+                        <img src={lifesgame} alt="logo" />
+                        <div
+                            style={{ width: '15%' }}
+                        >Reproducting the famous game of life</div>
+                    </div>
+                </a>
             </div>
         </div>
     );
