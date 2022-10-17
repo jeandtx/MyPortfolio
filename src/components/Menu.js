@@ -1,7 +1,16 @@
 import '../styles/Menu.css';
 
-
 function Menu() {
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth',
+            });
+        });
+    });
     return (
         <div className='Menu'>
             <div className='navbar'>
