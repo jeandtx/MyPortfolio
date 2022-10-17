@@ -31,7 +31,7 @@ function Projects() {
     }, []);
 
     return (
-        <div className='projects'>
+        <div className='projects' id='projects'>
             <h1 ref={h1Ref}>My Projects</h1>
             <div className='projects-container' >
                 <h2>Python Game</h2>

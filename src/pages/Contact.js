@@ -12,7 +12,7 @@ function Contact() {
     const [data, setData] = useState([]);
 
     return (
-        <div className='contact'>
+        <div className='contact' id='contact'>
             <div className='upper'>
                 <div style={{
                     display: 'flex',

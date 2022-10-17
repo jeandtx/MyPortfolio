@@ -123,7 +123,7 @@ function Me() {
     }, []);
 
     return (
-        <div className="aboutme">
+        <div className="aboutme" id='aboutme'>
             <h4>
                 I am a french student living at Paris. I am currently studying at the EFREI Paris school. I am a computer science student and I am passionate about programming.
                 I love to learn new things and I am always looking for new challenges.
