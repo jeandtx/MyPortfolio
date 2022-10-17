@@ -27,6 +27,12 @@
 	height: auto;
 }
 
+.icons img:hover {
+	transform: scale(1.2);
+	transition: 1s;
+	background-color: #0164b4;
+}
+
 .form {
 	display: flex;
 	flex-direction: column;

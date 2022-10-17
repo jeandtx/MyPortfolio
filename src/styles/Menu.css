@@ -28,7 +28,7 @@ a {
 }
 
 .button:hover .insidebutton {
-	background-color: #ffffff;
+	background-color: #0164b4;
 	border-radius: calc(0.1em + 0.3vw);
 	transition: 0.5s;
 	color: #000000;

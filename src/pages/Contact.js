@@ -79,25 +79,47 @@ function Contact() {
                 </div>
             </div>
             <div className='old-messages'>
-                <h3>Old Messages</h3>
+                <h1>Old Messages</h1>
+                {
+                    data.length < 1 && (<p
+                        style={{
+                            fontSize: '0.5rem',
+                        }}
+                    >No messages yet</p>)
+                }
 
                 {
                     data.length > 0 && (
-                        <table>
-                            <tr>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Message</th>
-                            </tr>
-                            {data.map((item, index) => (
-                                <tr key={index}>
-                                    <td>{item.name}</td>
-                                    <td>{item.email}</td>
-                                    <td>{item.message}</td>
+                        <div>
+                            <table>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Message</th>
                                 </tr>
-                            ))}
-                        </table>)
-                }
+                                {data.map((item, index) => (
+                                    <tr key={index}>
+                                        <td>{item.name}</td>
+                                        <td>{item.email}</td>
+                                        <td>{item.message}</td>
+                                    </tr>
+                                ))}
+                            </table>
+                            <button style={{
+                                color: 'black',
+                                backgroundColor: '#0164B4',
+                                border: 'none',
+                                padding: '10px',
+                                borderRadius: '5px',
+                                cursor: 'pointer',
+                                marginTop: '10px',
+                            }} onClick={function () {
+                                setData([]);
+                            }}>
+                                clear
+                            </button>
+                        </div>
+                    )}
             </div>
         </div>
     );
