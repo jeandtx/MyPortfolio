@@ -43,7 +43,7 @@ function Contact() {
                         type="text"
                         id="name"
                         name="name"
-                        placeholder='name'
+                        placeholder='Name'
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                     />
@@ -51,7 +51,7 @@ function Contact() {
                         type="email"
                         id="email"
                         name="email"
-                        placeholder='email'
+                        placeholder='Email'
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
@@ -66,10 +66,14 @@ function Contact() {
                         type="submit"
                         value="Submit"
                         onClick={() => {
-                            setData([...data, { name, email, message }]);
-                            setName('Thank');
-                            setEmail('you');
-                            setMessage(';)');
+                            if (name === '' || email === '' || message === '') {
+                                alert('Please fill all the fields');
+                            } else {
+                                setData([...data, { name, email, message }]);
+                                setName('Thank');
+                                setEmail('you');
+                                setMessage(';)');
+                            }
                         }}
                     />
                 </div>
@@ -77,21 +81,23 @@ function Contact() {
             <div className='old-messages'>
                 <h3>Old Messages</h3>
 
-                {/* // todo choose between a table or differents div  */}
-                <table>
-                    <tr>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Message</th>
-                    </tr>
-                    {data.map((item, index) => (
-                        <tr key={index}>
-                            <td>{item.name}</td>
-                            <td>{item.email}</td>
-                            <td>{item.message}</td>
-                        </tr>
-                    ))}
-                </table>
+                {
+                    data.length > 0 && (
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Message</th>
+                            </tr>
+                            {data.map((item, index) => (
+                                <tr key={index}>
+                                    <td>{item.name}</td>
+                                    <td>{item.email}</td>
+                                    <td>{item.message}</td>
+                                </tr>
+                            ))}
+                        </table>)
+                }
             </div>
         </div>
     );
